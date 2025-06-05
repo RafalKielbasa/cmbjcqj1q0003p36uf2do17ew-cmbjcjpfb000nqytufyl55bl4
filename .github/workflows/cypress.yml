@@ -73,7 +73,7 @@ jobs:
 
           TEST_RESULTS=$(cat cypress/results/output.json | jq '.')
 
-          curl -X POST  https://8074-83-9-56-28.ngrok-free.app/api/homework-results             -H "Content-Type: application/json"             -H "Authorization: Bearer $ID_TOKEN"             -d @- <<EOF
+          curl -X POST  https://586c-2a02-a315-41f2-4980-2ac6-949f-7c52-a1c1.ngrok-free.app/api/homework-results             -H "Content-Type: application/json"             -H "Authorization: Bearer $ID_TOKEN"             -d @- <<EOF
           {
             "studentRepository": "${{ github.repository }}",
             "commitSha": "${{ github.sha }}",
